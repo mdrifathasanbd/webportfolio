@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Leave a Mark — 90-Day SEO Growth Proposal for the U.S. market" />
+  <title>Leave a Mark — 90-Day SEO Growth Proposal | Rifat Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --cream:#f4f1e8;
+      --paper:#fbfaf6;
+      --ink:#10110f;
+      --muted:#6f7069;
+      --line:#d9d7ce;
+      --lime:#c9ff4a;
+      --lime-soft:#eaffaa;
+      --white:#fff;
+      --radius:16px;
+      --max:1240px;
+      --narrow:820px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:"Inter",Arial,Helvetica,sans-serif;
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit}
+    .serif{font-family:"Libre Caslon Display",Georgia,"Times New Roman",serif;font-style:italic;font-weight:400}
+
+    .shell{width:min(calc(100% - 40px),var(--max));margin:0 auto}
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(244,241,232,.9);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(16,17,15,.08);
+    }
+    .nav{
+      min-height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+    .brand{
+      text-decoration:none;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-size:.78rem;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .brand-dot{
+      width:13px;height:13px;border-radius:50%;background:var(--lime);border:1px solid var(--ink);
+    }
+    .nav-links{display:flex;align-items:center;gap:22px}
+    .nav-links a{
+      text-decoration:none;
+      font-size:.78rem;
+      font-weight:700;
+      color:#30312d;
+    }
+    .nav-cta{
+      background:var(--ink);
+      color:#fff!important;
+      border-radius:999px;
+      padding:10px 15px;
+    }
+
+    .hero{padding:92px 0 72px;border-bottom:1px solid var(--line)}
+    .eyebrow{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-size:.72rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.13em;
+      margin-bottom:24px;
+    }
+    .eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime);border:1px solid var(--ink)}
+    h1{
+      margin:0;
+      max-width:1120px;
+      font-size:clamp(4rem,9.6vw,8.8rem);
+      line-height:.94;
+      letter-spacing:-.065em;
+      font-weight:800;
+    }
+    .hero-support{
+      display:grid;
+      grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);
+      gap:64px;
+      align-items:end;
+      margin-top:54px;
+    }
+    .hero-statement{
+      margin:0;
+      font-size:clamp(1.8rem,3vw,3rem);
+      line-height:1.12;
+      max-width:780px;
+    }
+    .hero-copy{margin:0;color:#565750;font-size:1rem;max-width:520px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+    .btn{
+      min-height:44px;
+      padding:0 16px;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      border-radius:999px;
+      border:1px solid var(--ink);
+      text-decoration:none;
+      font-size:.8rem;
+      font-weight:800;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-dark{background:var(--ink);color:#fff}
+    .btn-light{background:transparent}
+    .arrow{font-size:1rem;line-height:1}
+
+    .stats{
+      margin-top:72px;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+    .stat{padding:24px 20px;border-right:1px solid var(--line)}
+    .stat:first-child{padding-left:0}
+    .stat:last-child{border-right:0}
+    .stat strong{display:block;font-size:clamp(2rem,4vw,3.4rem);line-height:1;letter-spacing:-.05em;margin-bottom:7px}
+    .stat span{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+
+    .section{padding:92px 0;border-bottom:1px solid var(--line)}
+    .section.soft{background:var(--paper)}
+    .section-head{
+      display:grid;
+      grid-template-columns:.72fr 1.28fr;
+      gap:56px;
+      margin-bottom:48px;
+      align-items:start;
+    }
+    .label{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      font-size:.71rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.13em;
+      padding-top:8px;
+    }
+    .label:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime);border:1px solid var(--ink)}
+    h2{
+      margin:0;
+      font-size:clamp(2.7rem,6vw,6rem);
+      line-height:1.04;
+      letter-spacing:-.05em;
+      font-weight:800;
+      max-width:920px;
+      text-wrap:balance;
+    }
+    .intro{
+      grid-column:2;
+      max-width:760px;
+      margin:18px 0 0;
+      color:#5d5e58;
+      font-size:1rem;
+    }
+
+    .insight-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper)}
+    .insight{padding:28px;border-right:1px solid var(--line);min-height:240px;display:flex;flex-direction:column;justify-content:space-between}
+    .insight:last-child{border-right:0}
+    .insight-num{font-size:.72rem;font-weight:800;letter-spacing:.1em;color:var(--muted)}
+    .insight h3{font-size:1.55rem;line-height:1.16;letter-spacing:-.03em;font-weight:700;margin:34px 0 12px}
+    .insight p{margin:0;color:var(--muted);font-size:.91rem}
+
+    .roadmap{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:var(--paper);
+    }
+    .month{padding:30px;border-right:1px solid var(--line);position:relative;min-height:540px;display:flex;flex-direction:column}
+    .month:last-child{border-right:0}
+    .month-tag{
+      width:max-content;
+      background:var(--lime);
+      border:1px solid var(--ink);
+      border-radius:999px;
+      padding:7px 10px;
+      font-size:.7rem;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.09em;
+    }
+    .month h3{font-size:2rem;line-height:1.12;letter-spacing:-.04em;font-weight:700;margin:28px 0 10px}
+    .month .why{font-family:"Libre Caslon Display",Georgia,"Times New Roman",serif;font-style:italic;font-size:1.2rem;line-height:1.3;margin:0 0 30px;color:#30312e}
+    .month ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    .month li{padding-top:12px;border-top:1px solid var(--line);font-size:.9rem;color:#51524d}
+    .month-result{margin-top:auto;padding-top:28px}
+    .month-result strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+    .month-result p{margin:0;font-size:.9rem;color:#444540}
+
+    .flow{
+      margin-top:24px;
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:var(--cream);
+    }
+    .flow div{padding:18px;border-right:1px solid var(--line);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.09em;text-align:center}
+    .flow div:last-child{border-right:0}
+    .flow div:nth-child(3){background:var(--lime)}
+
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+    .sticky-copy{position:sticky;top:110px}
+    .sticky-copy h3{font-size:clamp(2.1rem,4vw,4rem);line-height:1.08;letter-spacing:-.045em;font-weight:700;margin:0 0 18px;text-wrap:balance}
+    .sticky-copy p{color:var(--muted);max-width:460px}
+
+    .task-list{border-top:1px solid var(--line)}
+    .task{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}
+    .task-no{font-size:.72rem;font-weight:800;color:var(--muted);padding-top:4px}
+    .task h4{margin:0 0 7px;font-size:1.15rem;letter-spacing:-.025em}
+    .task p{margin:0;color:var(--muted);font-size:.91rem}
+    .task .chips{margin-top:12px}
+
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 10px;font-size:.76rem;font-weight:700;color:#4b4c46}
+    .chip.lime{background:var(--lime-soft);border-color:#b8d85f;color:var(--ink)}
+
+    .keyword-board{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .board{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--paper)}
+    .board.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .board h3{margin:0 0 12px;font-size:1.55rem;letter-spacing:-.035em}
+    .board p{margin:0 0 22px;color:var(--muted)}
+    .board.dark p{color:#c2c4bd}
+    .board.dark .chip{background:#1d1e1b;border-color:#393a36;color:#f1f1eb}
+
+    .results-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper)}
+    .result{padding:30px;border-right:1px solid var(--line)}
+    .result:last-child{border-right:0}
+    .result .days{font-size:clamp(2.7rem,5vw,4.6rem);line-height:1.08;letter-spacing:-.055em;font-weight:800;margin-bottom:26px}
+    .result h3{font-size:1.3rem;margin:0 0 14px;letter-spacing:-.03em}
+    .result ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;color:#555650;font-size:.9rem}
+    .result li:before{content:"↳";margin-right:8px;color:#1d1e1a}
+
+    .expectation-note{margin-top:18px;padding:20px 22px;border:1px solid var(--ink);border-radius:var(--radius);display:grid;grid-template-columns:180px 1fr;gap:26px;background:var(--lime-soft)}
+    .expectation-note strong{font-size:.76rem;text-transform:uppercase;letter-spacing:.09em}
+    .expectation-note p{margin:0;font-family:"Libre Caslon Display",Georgia,"Times New Roman",serif;font-style:italic;font-size:1.17rem;line-height:1.35}
+
+    .report-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper)}
+    .report{padding:24px;border-right:1px solid var(--line)}
+    .report:last-child{border-right:0}
+    .report span{font-size:.7rem;text-transform:uppercase;letter-spacing:.11em;font-weight:900;color:var(--muted)}
+    .report h3{margin:30px 0 8px;font-size:1.25rem}
+    .report p{margin:0;color:var(--muted);font-size:.88rem}
+
+    .deliverable-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .deliverable{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:var(--paper)}
+    .deliverable .top{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:26px}
+    .deliverable .top span{font-size:.69rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
+    .deliverable .top i{width:11px;height:11px;border-radius:50%;background:var(--lime);border:1px solid var(--ink)}
+    .deliverable h3{font-size:1.55rem;line-height:1.04;letter-spacing:-.04em;margin:0 0 18px}
+    .deliverable ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;color:#555650;font-size:.87rem}
+    .deliverable li{padding-top:9px;border-top:1px solid var(--line)}
+
+    details{border-top:1px solid var(--line)}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:800;display:flex;justify-content:space-between;gap:20px}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";font-size:1.2rem}
+    details[open] summary:after{content:"−"}
+    .detail-body{padding:0 0 20px;color:var(--muted);max-width:900px;font-size:.92rem}
+
+    .cta{padding:92px 0 78px}
+    .cta-panel{
+      border:1px solid var(--ink);
+      border-radius:22px;
+      background:linear-gradient(135deg,var(--lime-soft),var(--lime));
+      padding:50px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:50px;
+      align-items:end;
+    }
+    .cta-panel h2{font-size:clamp(3rem,6vw,6.2rem);line-height:1.02;font-weight:800}
+    .board h3,.report h3,.deliverable h3,.result h3,.task h4{line-height:1.18;font-weight:700}
+    .cta-panel .serif{font-size:1.5rem;line-height:1.25;margin:22px 0 0;max-width:760px}
+    .cta-side p{margin:0 0 24px;color:#32332f}
+
+
+    @media(max-width:980px){
+      .nav-links a:not(.nav-cta){display:none}
+      .hero-support,.section-head,.split,.cta-panel{grid-template-columns:1fr}
+      .intro{grid-column:1}
+      .sticky-copy{position:static}
+      .insight-grid,.roadmap,.results-grid,.report-grid,.deliverable-grid{grid-template-columns:1fr}
+      .insight,.month,.result,.report{border-right:0;border-bottom:1px solid var(--line)}
+      .insight:last-child,.month:last-child,.result:last-child,.report:last-child{border-bottom:0}
+      .month{min-height:auto}
+      .month-result{margin-top:32px}
+      .flow{grid-template-columns:1fr}
+      .flow div{border-right:0;border-bottom:1px solid var(--line)}
+      .flow div:last-child{border-bottom:0}
+      .keyword-board{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .stat:nth-child(2){border-right:0}
+      .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      .stat:nth-child(3){padding-left:0}
+      .expectation-note{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .shell{width:min(calc(100% - 24px),var(--max))}
+      .hero{padding:66px 0 48px}
+      h1{font-size:clamp(3.4rem,18vw,5.7rem)}
+      .hero-support{gap:26px;margin-top:38px}
+      .stats{grid-template-columns:1fr;margin-top:48px}
+      .stat,.stat:first-child,.stat:nth-child(3){padding:18px 0;border-right:0;border-bottom:1px solid var(--line)}
+      .stat:last-child{border-bottom:0}
+      .section{padding:66px 0}
+      .section-head{gap:18px;margin-bottom:34px}
+      .insight,.month,.result,.report,.deliverable,.board{padding:22px}
+      .task{grid-template-columns:38px 1fr}
+      .cta{padding:66px 0 46px}
+      .cta-panel{padding:28px 22px;border-radius:18px}
+    }
+
+
+    /* Portfolio-matched title + motion */
+    .hero{
+      position:relative;
+      overflow:hidden;
+      isolation:isolate;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-2;
+      pointer-events:none;
+      background-image:
+        linear-gradient(rgba(16,17,15,.025) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(16,17,15,.025) 1px,transparent 1px);
+      background-size:82px 82px;
+      -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 18%,#000 78%,transparent 100%);
+      mask-image:linear-gradient(to bottom,transparent 0%,#000 18%,#000 78%,transparent 100%);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      z-index:-1;
+      left:50%;
+      top:44%;
+      width:880px;
+      height:650px;
+      border-radius:50%;
+      background:radial-gradient(circle,rgba(201,255,74,.18),rgba(201,255,74,.055) 45%,transparent 70%);
+      filter:blur(18px);
+      transform:translate(-50%,-50%);
+      pointer-events:none;
+    }
+    .proposal-title{
+      position:relative;
+      max-width:1080px;
+      font-family:"Inter",Arial,Helvetica,sans-serif;
+      font-size:clamp(82px,10.2vw,154px);
+      line-height:.84;
+      letter-spacing:-.07em;
+      font-weight:700;
+    }
+    .proposal-title span{
+      display:block;
+      position:relative;
+      width:max-content;
+      max-width:100%;
+      z-index:1;
+    }
+    .proposal-title span:last-child::after{
+      content:"";
+      position:absolute;
+      left:7%;
+      right:-2%;
+      bottom:-9px;
+      height:14px;
+      border-radius:999px;
+      background:var(--lime);
+      z-index:-1;
+      opacity:.74;
+      transform:rotate(-1.3deg);
+    }
+    .hero-statement{
+      font-family:"Libre Caslon Display",Georgia,"Times New Roman",serif;
+      font-style:italic;
+      font-weight:400;
+      letter-spacing:-.035em;
+    }
+
+    /* Same reveal behaviour used on the portfolio site */
+    .reveal{
+      opacity:0;
+      transform:translateY(24px);
+      transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1);
+    }
+    .reveal.visible{opacity:1;transform:none}
+    .delay-1{transition-delay:.08s}
+    .delay-2{transition-delay:.16s}
+    .delay-3{transition-delay:.24s}
+
+    /* Stagger the large title without changing its layout */
+    .proposal-title span{
+      opacity:0;
+      transform:translateY(30px);
+      transition:opacity .72s ease,transform .72s cubic-bezier(.2,.75,.25,1);
+    }
+    body.motion-ready .proposal-title span{opacity:1;transform:none}
+    body.motion-ready .proposal-title span:nth-child(1){transition-delay:.08s}
+    body.motion-ready .proposal-title span:nth-child(2){transition-delay:.16s}
+    body.motion-ready .proposal-title span:nth-child(3){transition-delay:.24s}
+
+    @media(max-width:640px){
+      .proposal-title{font-size:clamp(64px,19vw,94px);line-height:.88}
+      .proposal-title span:last-child::after{height:10px;bottom:-6px}
+      .hero::before{background-size:58px 58px}
+      .hero::after{width:520px;height:460px;top:42%}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *{scroll-behavior:auto!important}
+      .reveal,.proposal-title span{opacity:1!important;transform:none!important;transition:none!important}
+    }
+
+    @media print{
+      .topbar{display:none}
+      body{background:#fff}
+      .section,.hero{break-inside:avoid}
+      .roadmap,.results-grid,.deliverable-grid{display:block;border:0}
+      .month,.result,.deliverable{margin:0 0 16px;border:1px solid var(--line)}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="#top"><span class="brand-dot"></span>90-Day SEO Proposal</a>
+      <nav class="nav-links" aria-label="Proposal navigation">
+        <a href="#findings">What I found</a>
+        <a href="#roadmap">Plan</a>
+        <a href="#results">Results</a>
+        <a href="#deliverables">Deliverables</a>
+        <a class="nav-cta" href="#objective">View objective ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell">
+        <div class="eyebrow reveal">Leave a Mark · U.S. Organic Search Strategy</div>
+        <h1 class="proposal-title" aria-label="90-Day SEO Growth Proposal"><span>90-DAY</span><span>SEO GROWTH</span><span>PROPOSAL</span></h1>
+
+        <div class="hero-support reveal delay-1">
+          <p class="hero-statement serif">The website already has the expertise. My job is to make sure Google can find it, understand it and connect it with the right U.S. searches.</p>
+          <div>
+            <p class="hero-copy">I recommend a three-month SEO engagement. Month 1 fixes the technical issues holding the site back. Month 2 improves the pages that should bring in commercial search traffic. Month 3 uses real Search Console data to push the areas already gaining traction.</p>
+            <div class="actions">
+              <a class="btn btn-dark" href="#roadmap">See the 90-day plan <span class="arrow">↘</span></a>
+              <a class="btn btn-light" href="#results">What to expect <span class="arrow">↘</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats reveal delay-2" aria-label="Proposal summary">
+          <div class="stat"><strong>90</strong><span>Days</span></div>
+          <div class="stat"><strong>3</strong><span>Focused stages</span></div>
+          <div class="stat"><strong>U.S.</strong><span>Primary search market</span></div>
+          <div class="stat"><strong>1×</strong><span>Report every month</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="findings">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="label">What I found</div>
+          <div>
+            <h2>The first job is not more content.</h2>
+            <p class="intro">The current audit points to indexing, duplication, canonical and performance issues. If those signals are unclear, publishing more pages simply gives Google more URLs to process before the foundation is fixed.</p>
+          </div>
+        </div>
+
+        <div class="insight-grid reveal delay-1">
+          <article class="insight">
+            <span class="insight-num">01 / Indexation</span>
+            <div><h3>Google needs cleaner signals.</h3><p>I’ll sort the sitemap, excluded URLs, redirects, canonicals, orphan pages and unnecessary WordPress URLs so the right pages are easier to crawl and index.</p></div>
+          </article>
+          <article class="insight">
+            <span class="insight-num">02 / Performance</span>
+            <div><h3>Mobile speed needs attention.</h3><p>The audit shows JavaScript/main-thread and mobile performance issues. I’ll focus on the parts that materially affect Core Web Vitals and user experience.</p></div>
+          </article>
+          <article class="insight">
+            <span class="insight-num">03 / Search relevance</span>
+            <div><h3>The services need clearer search targets.</h3><p>Key pages should each have a clear commercial intent. That gives Leave a Mark a better chance to rank for the specific services U.S. buyers are actually searching for.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="roadmap">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="label">90-Day roadmap</div>
+          <div>
+            <h2>Fix. Optimise. Grow.</h2>
+            <p class="intro">The order matters. I want the site technically clean before we ask Google to rank more commercial pages. Then I want enough live data to see what is actually working before deciding what to scale.</p>
+          </div>
+        </div>
+
+        <div class="roadmap reveal delay-1">
+          <article class="month">
+            <span class="month-tag">Month 01</span>
+            <h3>Fix the foundation.</h3>
+            <p class="why">Make it easier for Google to crawl, index and measure the site correctly.</p>
+            <ul>
+              <li>Search Console and indexation clean-up</li>
+              <li>Sitemap, redirects, 404s, noindex and canonical fixes</li>
+              <li>English/Hebrew duplication and hreflang review</li>
+              <li>Full WordPress technical crawl</li>
+              <li>Core Web Vitals and mobile performance work</li>
+              <li>Keyword, traffic and conversion baseline</li>
+            </ul>
+            <div class="month-result"><strong>What I want to see</strong><p>Fewer crawl/indexing issues, cleaner URL signals, better performance and a reliable baseline before the growth work starts.</p></div>
+          </article>
+
+          <article class="month">
+            <span class="month-tag">Month 02</span>
+            <h3>Improve commercial relevance.</h3>
+            <p class="why">Match the site more closely with the way potential U.S. clients search for these services.</p>
+            <ul>
+              <li>U.S. keyword and competitor research</li>
+              <li>Core service-page optimisation</li>
+              <li>High-intent landing pages where the data supports them</li>
+              <li>Internal links between services, content and case studies</li>
+              <li>Trust, author and expertise signals</li>
+              <li>Structured data clean-up and validation</li>
+            </ul>
+            <div class="month-result"><strong>What I want to see</strong><p>More relevant non-branded impressions, new keyword visibility, stronger snippets and early movement on long-tail commercial terms.</p></div>
+          </article>
+
+          <article class="month">
+            <span class="month-tag">Month 03</span>
+            <h3>Push what is gaining traction.</h3>
+            <p class="why">Use real Search Console data instead of guessing which pages or topics deserve the next round of work.</p>
+            <ul>
+              <li>Queries with impressions but weak clicks</li>
+              <li>Keywords sitting around positions 5–20</li>
+              <li>Content cluster and existing-blog optimisation</li>
+              <li>Relevant authority and backlink opportunities</li>
+              <li>Conversion improvements on priority pages</li>
+              <li>Final crawl and before-vs-after review</li>
+            </ul>
+            <div class="month-result"><strong>What I want to see</strong><p>Wider keyword coverage, stronger U.S. visibility and a clear list of the pages and themes worth investing in next.</p></div>
+          </article>
+        </div>
+
+        <div class="flow reveal delay-2" aria-label="Working method">
+          <div>01 Fix</div><div>02 Measure</div><div>03 Build</div><div>04 Measure</div><div>05 Improve</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell split reveal">
+        <div class="sticky-copy">
+          <div class="label">Month 01</div>
+          <h3>Technical SEO first.</h3>
+          <p>I’m putting the technical work first because crawlability and indexation affect everything that comes after it. There is little value in optimising or creating pages that Google is struggling to process correctly.</p>
+        </div>
+        <div class="task-list">
+          <div class="task"><div class="task-no">01</div><div><h4>Search Console & indexation</h4><p>Review sitemap processing, Crawled — Currently Not Indexed pages, 404s, redirected URLs, noindex pages, robots restrictions, Google-selected canonicals and unnecessary exclusions.</p></div></div>
+          <div class="task"><div class="task-no">02</div><div><h4>WordPress technical crawl</h4><p>Check status codes, redirect chains, canonicals, crawl depth, internal redirects, broken links, duplicate URLs, thin utility pages and Elementor/page-builder output.</p></div></div>
+          <div class="task"><div class="task-no">03</div><div><h4>English / Hebrew SEO</h4><p>Review /he/ URLs, duplicated language pages, self-referencing canonicals, reciprocal hreflang, x-default where appropriate and language-specific sitemap URLs.</p></div></div>
+          <div class="task"><div class="task-no">04</div><div><h4>Performance & Core Web Vitals</h4><p>Optimise images, LCP assets, JavaScript, unused CSS, fonts, third-party scripts, caching and heavy Elementor output.</p><div class="chips"><span class="chip lime">LCP ≤ 2.5s</span><span class="chip lime">INP ≤ 200ms</span><span class="chip lime">CLS ≤ 0.10</span></div></div></div>
+          <div class="task"><div class="task-no">05</div><div><h4>Measurement baseline</h4><p>Track clicks, impressions, average position, indexed pages, non-branded visibility, U.S. performance, priority keywords, landing pages and conversions where access is available.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="label">Month 02</div>
+          <div><h2>Give each important page a job.</h2><p class="intro">A broad service page should not be expected to rank for every variation of a commercial search. I’ll map the strongest search intent to the right existing page, then build a dedicated landing page only where the opportunity justifies it.</p></div>
+        </div>
+
+        <div class="keyword-board reveal delay-1">
+          <div class="board">
+            <h3>Core pages to optimise</h3>
+            <p>These are the existing commercial areas I would prioritise first.</p>
+            <div class="chips"><span class="chip">Presentations</span><span class="chip">Training</span><span class="chip">Strategy & Branding</span><span class="chip">Investor Relations</span><span class="chip">Communications</span><span class="chip">Videos</span></div>
+          </div>
+          <div class="board dark">
+            <h3>Search areas to validate</h3>
+            <p>These are examples of high-intent terms worth testing against search volume, competition and SERP fit.</p>
+            <div class="chips"><span class="chip">Corporate storytelling agency</span><span class="chip">Investor presentation design</span><span class="chip">Sales presentation design</span><span class="chip">Strategic narrative</span><span class="chip">Executive presentation coaching</span><span class="chip">Corporate storytelling workshops</span><span class="chip">AI communication</span><span class="chip">AI adoption storytelling</span></div>
+          </div>
+        </div>
+
+        <div class="task-list" style="margin-top:28px">
+          <div class="task"><div class="task-no">01</div><div><h4>On-page optimisation</h4><p>SEO titles, H1/H2/H3 structure, opening copy, metadata, supporting terms, image optimisation and clearer CTAs—without turning the copy into keyword stuffing.</p></div></div>
+          <div class="task"><div class="task-no">02</div><div><h4>Internal linking</h4><p>Build a clearer path from Homepage → Service Pages → Supporting Content → Case Studies → Conversion Pages, using descriptive anchor text and removing orphan pages.</p></div></div>
+          <div class="task"><div class="task-no">03</div><div><h4>Trust and E-E-A-T</h4><p>Make the real expertise more visible through team profiles, authorship, case studies, professional experience, the existing 500+ organisations proof point and measurable client outcomes where available.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="label">Month 03</div>
+          <div><h2>Let Search Console tell us what to do next.</h2><p class="intro">By Month 3 I should have enough data to stop treating every page equally. The quickest opportunities are often the queries where Google is already showing the site but the page is not yet earning enough clicks or ranking strongly enough.</p></div>
+        </div>
+
+        <div class="keyword-board reveal delay-1">
+          <div class="board">
+            <h3>What I’ll look for</h3>
+            <div class="chips"><span class="chip">Impressions but low CTR</span><span class="chip">Positions 5–20</span><span class="chip">Pages gaining visibility</span><span class="chip">Pages losing visibility</span><span class="chip">U.S. queries gaining traction</span><span class="chip">Cannibalisation</span></div>
+          </div>
+          <div class="board">
+            <h3>Content clusters</h3>
+            <div class="chips"><span class="chip">Corporate Storytelling</span><span class="chip">Presentation Strategy & Design</span><span class="chip">Investor Communications</span><span class="chip">Internal Communications</span><span class="chip">Strategic Narrative</span><span class="chip">Executive Communication</span><span class="chip">AI Communication & Adoption</span></div>
+          </div>
+        </div>
+
+        <div class="task-list" style="margin-top:28px">
+          <div class="task"><div class="task-no">01</div><div><h4>Improve existing content before publishing endlessly</h4><p>Refresh titles, search intent, useful sections, metadata, internal links, expert attribution and CTAs. Consolidate overlapping content where it makes sense.</p></div></div>
+          <div class="task"><div class="task-no">02</div><div><h4>Build authority carefully</h4><p>Look for relevant publications, partners, professional organisations, podcasts, unlinked brand mentions, directories and digital PR. I will not use bulk or spammy link packages.</p></div></div>
+          <div class="task"><div class="task-no">03</div><div><h4>Improve conversion on the pages earning traffic</h4><p>Review value proposition, above-the-fold CTA, case studies, client proof, contact friction and the mobile conversion experience.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="results">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="label">Expected results</div>
+          <div><h2>No ranking promises. Clear progress markers.</h2><p class="intro">SEO rankings are controlled by Google and competitors keep changing, so I will not promise a specific position, traffic percentage or number of leads. I will measure the work against the signals we should reasonably expect to improve at each stage.</p></div>
+        </div>
+
+        <div class="results-grid reveal delay-1">
+          <article class="result"><div class="days">0–30</div><h3>Get the site cleaner.</h3><ul><li>Better crawlability</li><li>Cleaner indexation</li><li>Fewer technical errors</li><li>Correct sitemap signals</li><li>Better website performance</li><li>Reliable tracking</li></ul></article>
+          <article class="result"><div class="days">30–60</div><h3>Look for early search movement.</h3><ul><li>More relevant impressions</li><li>New U.S. keyword visibility</li><li>More non-branded appearances</li><li>Priority pages indexed</li><li>Early ranking movement</li><li>Better landing-page engagement</li></ul></article>
+          <article class="result"><div class="days">60–90</div><h3>Find the areas worth scaling.</h3><ul><li>Wider keyword coverage</li><li>Stronger selected rankings</li><li>More U.S. organic visibility</li><li>More qualified visitors</li><li>More enquiry opportunities</li><li>Clear next-phase priorities</li></ul></article>
+        </div>
+
+        <div class="expectation-note reveal delay-2"><strong>Important</strong><p>Competitive commercial keywords can take longer than 90 days. The purpose of the first three months is to build a clean foundation, create relevance, show measurable movement and identify where the best long-term growth is likely to come from.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="reporting">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="label">Reporting</div>
+          <div><h2>You’ll know what changed and why.</h2><p class="intro">Each month I’ll keep the reporting focused: what I completed, what moved, what I learned from the data and what I’m doing next. No long report full of numbers with no context.</p></div>
+        </div>
+        <div class="report-grid reveal delay-1">
+          <div class="report"><span>01</span><h3>Completed</h3><p>The work implemented during the month.</p></div>
+          <div class="report"><span>02</span><h3>Performance</h3><p>Clicks, impressions, rankings, U.S. visibility, indexing and priority landing pages.</p></div>
+          <div class="report"><span>03</span><h3>Insights</h3><p>What Google is responding to, what is not working and any new opportunities found.</p></div>
+          <div class="report"><span>04</span><h3>Next actions</h3><p>The following month’s priorities based on the evidence we have.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="deliverables">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="label">Deliverables</div>
+          <div><h2>What I’ll deliver over the 90 days.</h2></div>
+        </div>
+
+        <div class="deliverable-grid reveal delay-1">
+          <article class="deliverable"><div class="top"><span>Month 01 / Foundation</span><i></i></div><h3>Technical clean-up & baseline</h3><ul><li>Technical SEO implementation</li><li>Search Console indexing clean-up</li><li>Sitemap remediation</li><li>Canonical / redirect / 404 fixes</li><li>International SEO / hreflang review</li><li>WordPress performance optimisation</li><li>Core Web Vitals work</li><li>Baseline keyword tracking</li><li>Analytics / conversion tracking review</li></ul></article>
+          <article class="deliverable"><div class="top"><span>Month 02 / Commercial</span><i></i></div><h3>Search relevance & landing pages</h3><ul><li>U.S. keyword research</li><li>Competitor / SERP analysis</li><li>Service-page optimisation</li><li>SEO titles, H1 and meta optimisation</li><li>Search-intent mapping</li><li>Commercial landing-page development</li><li>Internal-linking optimisation</li><li>E-E-A-T / trust improvements</li><li>Structured data optimisation</li></ul></article>
+          <article class="deliverable"><div class="top"><span>Month 03 / Growth</span><i></i></div><h3>Search data & next roadmap</h3><ul><li>Search Console opportunity analysis</li><li>Content-cluster development</li><li>Existing blog optimisation</li><li>Commercial/content internal linking</li><li>Authority/backlink opportunities</li><li>Conversion optimisation</li><li>Keyword refinement</li><li>Final technical crawl</li><li>Before-vs-after reporting</li><li>Next 3–6 month roadmap</li></ul></article>
+        </div>
+
+        <div style="margin-top:34px">
+          <details><summary>Final technical QA</summary><div class="detail-body">Final Screaming Frog crawl, Search Console validation, sitemap review, canonical checks, redirect checks, broken-link checks, hreflang checks, Core Web Vitals review, indexation comparison, keyword-performance comparison, organic traffic comparison and conversion comparison where data is available.</div></details>
+          <details><summary>What I will not use</summary><div class="detail-body">Spammy link packages, automated bulk link-building or low-quality tactics that create short-term numbers but put the site at risk. Authority work will focus on relevance and quality.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="objective">
+      <div class="shell">
+        <div class="cta-panel reveal">
+          <div>
+            <div class="label">The objective</div>
+            <h2>Make SEO useful to the business.</h2>
+            <p class="serif">Not just a cleaner audit score. A healthier site, clearer U.S. search targeting, stronger commercial pages and enough real Google data to know where the next growth opportunity is.</p>
+          </div>
+          <div class="cta-side">
+            <p>At the end of 90 days, Leave a Mark should have a stronger technical foundation, better search relevance, improved internal linking and performance, stronger trust signals and a practical roadmap for the next 3–6 months.</p>
+            <a class="btn btn-dark" href="#top">Back to top <span class="arrow">↑</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    (() => {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Trigger the title stagger after first paint.
+      requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add('motion-ready')));
+
+      const revealEls = document.querySelectorAll('.reveal');
+      if (prefersReduced || !('IntersectionObserver' in window)) {
+        revealEls.forEach(el => el.classList.add('visible'));
+        return;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealEls.forEach(el => observer.observe(el));
+    })();
+  </script>
+
+</body>
+</html>
